@@ -1,0 +1,30 @@
+.btn{
+    padding: 5px 20px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 7px 2px rgb(194, 236, 203);
+    color: rgb(194, 236, 203);
+
+}
+
+.BackBtnSearch{
+    padding: 5px 20px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.BackBtnSearch:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 7px 2px rgb(194, 236, 203);
+    color: rgb(194, 236, 203);
+}

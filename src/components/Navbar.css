@@ -1,0 +1,22 @@
+.navContainer{
+    padding: .4rem;
+    background-color: #333 ;/*  rgba(17, 17, 17, 0.884); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Title1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.Title1:hover{
+    
+   
+    color: rgb(194, 236, 203);
+
+}

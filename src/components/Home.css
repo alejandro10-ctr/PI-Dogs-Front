@@ -1,0 +1,125 @@
+/* .body{
+    padding: 3% 0 3% 0;
+    background-image: url('https://thumbs.dreamstime.com/b/fondo-de-pantalla-para-perros-huella-vector-sobre-blanco-aislado-pasos-199267833.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: repeat;   
+} */
+
+.Loading{
+width: 150px;
+font-display: block;
+justify-content: center;
+align-items: center;
+position: fixed;
+margin-top: -7rem;
+color: white;
+
+} 
+
+.LoaderContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 1;
+}
+
+/* .spinner{
+    animation: url('https://i.pinimg.com/originals/d5/0e/65/d50e65e83b9a3857503e5d69fb28b949.gif') 1.2s linear infinite ;
+} */
+
+ .spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #4eff65c4 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+
+.btnToForm{
+    padding: 5px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    margin-top: -15px;
+    font-size: 1rem;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(206, 196, 247);
+    
+}
+.btnToForm:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 7px 2px rgb(194, 236, 203);
+    color: rgb(194, 236, 203);
+
+}
+
+
+.FiltersTitle{
+    color:  rgb(206, 196, 247);;
+    font-style: italic;
+    font-weight: 500;    
+    text-shadow: 6px 4px 5px rgba(0,0,0,0.43);
+    margin-left: -25rem ;
+    /* padding: 10px 3px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+     */
+}
+.Filters{
+    margin-left: -50rem;
+    margin-top: 3px;
+}
+
+.SortsTitle{
+    color: rgb(206, 196, 247);
+    font-style: italic;
+    font-weight: 500;    
+    text-shadow: 6px 4px 5px rgba(0,0,0,0.43);
+    margin-right: -50rem; 
+}
+.Sorts{
+    margin-right: -25rem;
+    margin-top: 3px;
+}
+
+.sortsYfilter{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: -55px;
+
+}
+
+.toForm{
+    margin-top: 40px;
+}
+
+.SearchBar{
+    margin-top: 10px;
+    
+}
