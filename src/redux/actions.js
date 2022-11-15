@@ -1,4 +1,4 @@
-import React from 'react';
+
 import axios from 'axios'
 
 export const GET_DOGS = 'GET_DOGS'
@@ -70,7 +70,7 @@ export function getDogsById(id){
             console.log(info)
               return dispatch({
                 type: GET_DOGS_BY_ID,
-                detail: info.data[0]
+                payload: info.data[0]
             }
             );
         }catch(error){

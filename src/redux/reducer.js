@@ -1,4 +1,3 @@
-import React from "react"
 import { GET_DOGS, GET_DOGS_BY_NAME, GET_TEMPERAMENTS, GET_DOGS_BY_ID, POST_DOG, FILTER_BY_CREATION, FILTER_BY_TEMPERAMENTS, ALPHABETICAL_SORT, WEIGHT_SORT, /* DELETE_CARD,  CLEAR_STATE */} from "./actions"
 
 var initialState = {
@@ -31,7 +30,7 @@ export default function rootReducer(state = initialState, action){
         case GET_DOGS_BY_ID:
             return{
                 ...state,
-                detail: action.paylaod 
+                detail: action.payload 
             };
         case POST_DOG:
             return{

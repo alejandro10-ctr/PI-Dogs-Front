@@ -1,7 +1,7 @@
 
  
-
- import axios from 'axios'
+import React from 'react';
+// import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
@@ -15,10 +15,12 @@ import './Detail.css'
 
 export default function Detail(){
     const dispatch = useDispatch();
+    const doggydog = useSelector((state) => state.detail)
+    console.log(doggydog)
     //const detail = useSelector((state) => state.detail)
     const {id} = useParams();
+   console.log(id)
     const [loading, setLoading] = useState(false)
-    
     
     
     
@@ -27,7 +29,7 @@ export default function Detail(){
         dispatch(getTemperaments(id))
         dispatch(getDogsById(id))
     }, [dispatch, id]) 
-    
+   
     
     useEffect(() => {
         setLoading(true)
@@ -56,8 +58,18 @@ export default function Detail(){
     }else{
           
         return (
-            <div>
-                   <h1> NOMBRE: { "LA PUTA MADRE!!!!" } </h1>
+            <div className='ContainerDetail' >
+                <div className='cardDetail'>
+                   <h1>  { doggydog.name } </h1>
+                   <img className='imageDetail'  src={doggydog.image} alt="https://pbs.twimg.com/media/E6xbYveX0AckxOZ?format=jpg&name=900x900" />
+
+                  <h4>weight: { doggydog.weight.length === 2 ? doggydog.weight[0] + " to " + doggydog.weight[1] : doggydog.weight[0]}  kg</h4>
+                  <h4>height: { doggydog.height.length === 2 ? doggydog.height[0] + " to " + doggydog.height[1] : doggydog.height[0]} cm</h4>
+                  <h3>temperaments: {doggydog.temperaments.map((el, index )=> index === el.length ? el : el + " | ")}</h3>
+                  </div>
+                  <Link to='/home' >
+                  <button className='backButton'  >Back</button>
+                  </Link>
              </div>
             
                )
